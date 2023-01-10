@@ -9,7 +9,7 @@
     .header-inicio{
         padding-bottom: 38%;
         background-image: url(../assets/img/fondo-puma.jpg);
-        background-repeat: repeat;
+        background-repeat: no-repeat;
     }
 
 .korea{
@@ -93,11 +93,11 @@ a{
         gap:10px;
         grid-auto-flow: dense;
     }
-    
+
 /* css tienda */
 .header-tienda{
     margin-bottom: 39px;
-    background-color:antiquewhite
+    background-color:antiquewhite;
     }
     .korea-tienda{
         padding-top: 25px;
@@ -115,9 +115,6 @@ a{
     text-align: justify;
     list-style: none;
     align-content: flex-start;
-    position: fixed;
-    top: 0;
-    right: 0;
     }
     .conteiner-tienda{
         display: flex;
@@ -339,4 +336,92 @@ a{
         display: flex;
         justify-content: center;
         padding-top: 40px;
+    }
+
+    /* media queries inicio */
+    @media(max-width:768px){
+        .header-inicio{
+            padding-bottom: 20%;
+            background-repeat: no-repeat;
+            background-position: -10px -80px;
+        }
+        .link-inicio{
+            color: antiquewhite;
+        }
+        .navBar{
+            display: flex;
+            flex-direction:column;
+            gap: 20px;
+            align-items: center;
+
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: (2,1fr);
+            gap:10px;
+            grid-auto-flow: dense;
+        }
+        .text-deportivo1{
+            margin-left: 40px;
+            margin-bottom: 15px;
+        }
+        .texto-p1{
+            margin-bottom: 20px;
+            margin-left: 60px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .img1-inicio{
+            margin-left: 30%;
+        }
+        .img2-inicio{
+            margin-left: 30%;
+        }
+        .text-verano1{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .texto-p2{
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: flex-end
+        }
+        .img3-inicio{
+            margin-left: 30%;
+            margin-top: 20px;
+        }
+        .img4-inicio{
+            margin-left:31%;
+        }
+    }
+    @media(max-width:768px){
+        .header-tienda{
+            padding-bottom: 15%;
+            background-repeat: no-repeat;
+            background-position: -10px -80px;
+        }
+        .navBar-tienda{
+            display: flex;
+            flex-direction:column;
+            gap: 20px;
+            align-items: center;
+        }
+        .container-tienda{
+            display: flex;
+            justify-content: center;
+        }
+        .tienda{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .grid-container-galeria{
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            grid-template-rows:repeat(1,1fr)
+        }
     }
